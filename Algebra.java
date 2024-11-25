@@ -14,7 +14,7 @@ public class Algebra {
    		// System.out.println(pow(5,3));      // 5^3
    		// System.out.println(pow(3,5));      // 3^5
    		// System.out.println(div(12,3));   // 12 / 3    
-   		System.out.println(div(10, -5));    // 5 / 5  
+   		System.out.println(div(-11,4));    // 5 / 5  
    		// System.out.println(div(25,7));   // 25 / 7
    		// System.out.println(mod(25,7));   // 25 % 7
    		// System.out.println(mod(120,6));  // 120 % 6    
@@ -99,7 +99,7 @@ public class Algebra {
 			temp1 = minus(temp1, temp2);
 			count++;
 		}
-		if ((x1>=0 && x2<0) || (x2>=0 && x2<1)) {
+		if ((x1>=0 && x2<0) || (x2>=0 && x1<0)) {
 			return -count;
 		}
 		return count;
