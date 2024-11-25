@@ -29,7 +29,9 @@ public class Anagram {
 	// Returns true if the two given strings are anagrams, false otherwise.
 	public static boolean isAnagram(String str1, String str2) {
 		String s1 = preProcess(str1);
+		s1 = s1.replaceAll(" ", "");
 		String s2 = preProcess(str2);
+		s2 = s2.replaceAll(" ", "");
 		char c = 'a';
 		String temp = "";
 		for (int i=0; i<s1.length(); i++)
